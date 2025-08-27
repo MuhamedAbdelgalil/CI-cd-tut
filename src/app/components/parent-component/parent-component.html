@@ -2,8 +2,8 @@
 @defer {
 
   <app-child-component [(value)]="passedValue" (valueChange)="isValueChanged($event)"></app-child-component>
-} @loading (after 3000ms; minimum 5s) {
-  <img alt="Animated spinning circle indicating loading, set against a plain background" src="https://i.gifer.com/ZZ5H.gif" />
+} @placeholder {
+  <span class="text-green-400 bold"> Loading...</span>
 }
 
 
