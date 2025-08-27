@@ -1,0 +1,14 @@
+<p>parent-component works!</p>
+@defer {
+
+  <app-child-component [(value)]="passedValue" (valueChange)="isValueChanged($event)"></app-child-component>
+} @loading (after 3000ms; minimum 5s) {
+  <img alt="Animated spinning circle indicating loading, set against a plain background" src="https://i.gifer.com/ZZ5H.gif" />
+}
+
+
+<p> new Value after le3b ==> {{passedValue}}</p>
+<input id="myInput" #myInput type="text" placeholder="Hi dude"/>
+<h1 class="text-3xl font-bold underline text-red-900">
+  Hello world!
+</h1>
