@@ -1,4 +1,4 @@
-import { afterEveryRender, afterNextRender, Component, ElementRef, inject, input, signal, viewChild} from '@angular/core';
+import { afterEveryRender, Component, ElementRef, inject, viewChild} from '@angular/core';
 import { ChildComponent } from '../child-component/child-component';
 
 @Component({
