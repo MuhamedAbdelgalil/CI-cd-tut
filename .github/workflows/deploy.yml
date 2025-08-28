@@ -24,10 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run Linting
+        run: npm run lint
+
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href  --base-href "/CI-cd-tut/"
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
