@@ -18,6 +18,6 @@ export class ParentComponent {
   }
   passedValue = 0;
   isValueChanged(value: number) {
-    console.log('Value changed in child component:', value);
+    console.log('Value changed in child ==>', value);
   }
 }
